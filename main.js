@@ -1,5 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
+    // Lógica del Menú Hamburguesa Mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const menuIcon = menuToggle ? menuToggle.querySelector('i') : null;
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            
+            // Cambia el ícono entre hamburguesa (list) y cruz (x)
+            if (menuIcon) {
+                if (navLinks.classList.contains('active')) {
+                    menuIcon.className = 'ph ph-x';
+                } else {
+                    menuIcon.className = 'ph ph-list';
+                }
+            }
+        });
+
+        // Cerrar el menú desplegable al tocar cualquier link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                if (menuIcon) menuIcon.className = 'ph ph-list';
+            });
+        });
+    }
+
     // Lógica del Quiz (Mini Examen)
     const quizOptions = document.querySelectorAll('.quiz-option');
     
@@ -21,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.classList.add('incorrect');
                 // Mostrar la correcta
                 const correctBtn = document.querySelector('.quiz-option[data-correct="true"]');
-                correctBtn.classList.add('correct');
+                if (correctBtn) correctBtn.classList.add('correct');
             }
         });
     });
@@ -37,11 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Cerrar todos los demás
             faqItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
-                otherItem.nextElementSibling.style.maxHeight = null;
+                if (otherItem.nextElementSibling) {
+                    otherItem.nextElementSibling.style.maxHeight = null;
+                }
             });
 
             // Si no estaba activo, lo abrimos
-            if (!isActive) {
+            if (!isActive && answer) {
                 item.classList.add('active');
                 answer.style.maxHeight = answer.scrollHeight + "px";
             }
@@ -52,11 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
+            const targetId = this.getAttribute('href');
+            if (targetId && targetId !== '#') {
+                const target = document.querySelector(targetId);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
     });

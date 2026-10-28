@@ -13,18 +13,25 @@
 </head>
 <body>
 
-    <!-- Navegación -->
+<!-- Navegación -->
     <nav class="navbar">
         <div class="logo">
             <i class="ph-fill ph-steering-wheel"></i> RUTASEGURA
         </div>
-        <ul class="nav-links">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <i class="ph ph-list"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#metodo">Método</a></li>
             <li><a href="#practica">Práctica teórica</a></li>
             <li><a href="#videos">Videoteca</a></li>
             <li><a href="#faq">Preguntas frecuentes</a></li>
+            <li class="mobile-only">
+                <a href="#contacto" class="btn-primary" style="text-align: center; justify-content: center; width: 100%;">Contacto</a>
+            </li>
         </ul>
-        <a href="#contacto" class="btn-outline">Contacto</a>
+        <a href="#contacto" class="btn-outline desktop-only">Contacto</a>
     </nav>
 
     <!-- Hero Section -->
@@ -60,6 +67,39 @@
             </div>
         </div>
     </header>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="sobre-mi-section">
+        <div class="sobre-mi-container">
+            <div class="sobre-mi-image">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instructor de manejo">
+                <div class="experience-badge">
+                    <strong>+10</strong>
+                    <span>años enseñando</span>
+                </div>
+            </div>
+            <div class="sobre-mi-content">
+                <span class="section-subtitle">CONOCÉ A TU INSTRUCTOR</span>
+                <h2>Aprender a manejar no tiene por qué ser estresante</h2>
+                <p>Sé lo que genera sentarse por primera vez al volante: los nervios, la presión del tránsito y el miedo a cometer errores. Por eso, mi trabajo no es solo enseñarte a mover el auto, sino darte la seguridad para salir a la calle.</p>
+                <p>Con más de una década de experiencia acompañando a alumnos en Concordia, adapté un método 100% práctico y paciente, enfocado en tus tiempos y sin presiones.</p>
+                <div class="sobre-mi-stats">
+                    <div class="stat-item">
+                        <strong>+10</strong>
+                        <span>Años de experiencia</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>+200</strong>
+                        <span>Alumnos al volante</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>100%</strong>
+                        <span>Paciencia garantizada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Metodología -->
     <section id="metodo" class="metodo-section">
@@ -284,6 +324,7 @@
             <div class="footer-links">
                 <h4>Navegá</h4>
                 <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
                     <li><a href="#metodo">Método</a></li>
                     <li><a href="#practica">Práctica teórica</a></li>
                     <li><a href="#videos">Videoteca</a></li>
