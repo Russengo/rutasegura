@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
             
-            // Cambia el ícono entre hamburguesa (list) y cruz (x)
             if (menuIcon) {
                 if (navLinks.classList.contains('active')) {
                     menuIcon.className = 'ph ph-x';
@@ -19,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Cerrar el menú desplegable al tocar cualquier link
+        
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -28,33 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Lógica del Quiz (Mini Examen)
-    const quizOptions = document.querySelectorAll('.quiz-option');
     
-    quizOptions.forEach(option => {
-        option.addEventListener('click', function() {
-            // Prevenir múltiples clics
-            if (this.parentNode.querySelector('.correct') || this.parentNode.querySelector('.incorrect')) {
-                return;
-            }
-
-            const isCorrect = this.getAttribute('data-correct') === 'true';
-
-            // Deshabilitar botones
-            quizOptions.forEach(btn => btn.disabled = true);
-
-            if (isCorrect) {
-                this.classList.add('correct');
-            } else {
-                this.classList.add('incorrect');
-                // Mostrar la correcta
-                const correctBtn = document.querySelector('.quiz-option[data-correct="true"]');
-                if (correctBtn) correctBtn.classList.add('correct');
-            }
-        });
-    });
-
-    // Lógica del Acordeón (FAQ)
     const faqItems = document.querySelectorAll('.faq-question');
 
     faqItems.forEach(item => {
@@ -62,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const isActive = item.classList.contains('active');
             const answer = item.nextElementSibling;
 
-            // Cerrar todos los demás
+            
             faqItems.forEach(otherItem => {
                 otherItem.classList.remove('active');
                 if (otherItem.nextElementSibling) {
@@ -70,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Si no estaba activo, lo abrimos
+            
             if (!isActive && answer) {
                 item.classList.add('active');
                 answer.style.maxHeight = answer.scrollHeight + "px";
@@ -78,14 +51,63 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth scroll para links internos
+    // modal de reproducción
+    const videoCards = document.querySelectorAll('.video-card');
+    const videoModal = document.getElementById('video-modal');
+    const modalPlayer = document.getElementById('modal-video-player');
+    const modalTitle = document.getElementById('video-modal-title');
+    const closeVideoBtn = document.getElementById('close-video-modal');
+
+    function cerrarVideoModal() {
+        if (!videoModal || !modalPlayer) return;
+        videoModal.classList.remove('active');
+        modalPlayer.pause();
+        modalPlayer.removeAttribute('src');
+        modalPlayer.load();
+    }
+
+    if (videoCards.length > 0 && videoModal && modalPlayer) {
+        videoCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const videoSrc = card.getAttribute('data-video');
+                const titleText = card.getAttribute('data-title');
+
+                if (videoSrc) {
+                    modalTitle.textContent = titleText || 'Clase en video';
+                    modalPlayer.src = videoSrc;
+                    videoModal.classList.add('active');
+                    modalPlayer.play().catch(() => {
+                        
+                    });
+                }
+            });
+        });
+
+        if (closeVideoBtn) {
+            closeVideoBtn.addEventListener('click', cerrarVideoModal);
+        }
+
+        videoModal.addEventListener('click', (e) => {
+            if (e.target === videoModal) {
+                cerrarVideoModal();
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+                cerrarVideoModal();
+            }
+        });
+    }
+
+
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId && targetId !== '#') {
                 const target = document.querySelector(targetId);
                 if (target) {
+                    e.preventDefault();
                     target.scrollIntoView({
                         behavior: 'smooth'
                     });

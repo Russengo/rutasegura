@@ -3,20 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RutaSegura - Instructor de Manejo en Concordia</title>
+    
+    <!-- SEO Básico y Local -->
+    <title>Clases de Manejo en Concordia | Luis Velis - Instructor de Manejo</title>
+    <meta name="description" content="Aprendé a manejar en Concordia con Luis Velis. Clases de manejo prácticas para principiantes, perfeccionamiento y práctica en el circuito de examen real. ¡Reservá tu clase!">
+    <meta name="keywords" content="clases de manejo concordia, aprender a manejar concordia, instructor de manejo concordia, escuela de manejo concordia, luis velis manejo, examen practico concordia">
+    <meta name="author" content="Luis Velis">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Geolocalización para búsquedas locales -->
+    <meta name="geo.region" content="AR-E">
+    <meta name="geo.placename" content="Concordia, Entre Ríos">
+
+    <!-- Open Graph (Vista previa al compartir en WhatsApp, Instagram, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Clases de Manejo en Concordia - Luis Velis">
+    <meta property="og:description" content="Aprendé a manejar de verdad en Concordia, con paciencia, método paso a paso y práctica en el circuito real de examen.">
+    <!--<meta property="og:image" content="https://TU-DOMINIO-EN-VERCEL.vercel.app/luis_veliz.jpg">-->
+    <!--<meta property="og:url" content="https://TU-DOMINIO-EN-VERCEL.vercel.app/">-->
+    <meta property="og:locale" content="es_AR">
+
+    <!-- Fuentes y Estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Iconos Phosphor -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- Datos Estructurados (Schema.org para Google Local) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DrivingSchool",
+      "name": "Clases de Manejo - Luis Velis",
+      "description": "Instructor de manejo particular en Concordia, Entre Ríos. Clases prácticas para principiantes, perfeccionamiento y preparación para el examen de conducir.",
+      "image": "https://TU-DOMINIO-EN-VERCEL.vercel.app/luis_veliz.jpg",
+      "telephone": "+5493454078397",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Concordia",
+        "addressRegion": "Entre Ríos",
+        "addressCountry": "AR"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Concordia"
+      },
+      "sameAs": [
+        "https://www.instagram.com/clasesdemanejoluisvelis_cdia/"
+      ],
+      "priceRange": "$$"
+    }
+    </script>
 </head>
 <body>
 
-<!-- Navegación -->
+    <!-- Navegación -->
     <nav class="navbar">
         <div class="logo">
-            <i class="ph-fill ph-steering-wheel"></i> RUTASEGURA
+            <i class="ph-fill ph-steering-wheel"></i> Clases de Manejo - Luis Velis
         </div>
         <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
             <i class="ph ph-list"></i>
@@ -24,14 +69,14 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="#sobre-mi">Sobre mí</a></li>
             <li><a href="#metodo">Método</a></li>
-            <li><a href="#practica">Práctica teórica</a></li>
             <li><a href="#videos">Videoteca</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
             <li><a href="#faq">Preguntas frecuentes</a></li>
             <li class="mobile-only">
-                <a href="#contacto" class="btn-primary" style="text-align: center; justify-content: center; width: 100%;">Contacto</a>
+                <a href="https://wa.me/5493454078397?text=Hola%2C%20Luis%21%20Buen%20d%C3%ADa%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20de%20manejo.%20Gracias%21" class="btn-primary" style="text-align: center; justify-content: center; width: 100%;" target="_blank">Contacto</a>
             </li>
         </ul>
-        <a href="#contacto" class="btn-outline desktop-only">Contacto</a>
+        <a href="https://wa.me/5493454078397?text=Hola%2C%20Luis%21%20Buen%20d%C3%ADa%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20de%20manejo.%20Gracias%21" class="btn-outline desktop-only" target="_blank">Contacto</a>
     </nav>
 
     <!-- Hero Section -->
@@ -41,7 +86,7 @@
             <h1>Aprobá tu examen de manejo con confianza</h1>
             <p>Aprendé a manejar de verdad en Concordia, con paciencia, un método paso a paso y un instructor que te acompaña en cada salida.</p>
             <div class="hero-actions">
-                <a href="#reservar" class="btn-primary">Reservar mi primera clase <i class="ph ph-arrow-right"></i></a>
+                <a href="https://wa.me/5493454078397?text=Hola%2C%20Luis%21%20Buen%20d%C3%ADa%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20de%20manejo.%20Gracias%21" class="btn-primary" target="_blank">Reservar mi primera clase <i class="ph ph-arrow-right"></i></a>
                 <a href="#metodo" class="btn-text">Conocé el método</a>
             </div>
             <div class="social-proof">
@@ -54,7 +99,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instructor de manejo enseñando">
+            <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instructor de manejo en Concordia">
             <div class="floating-badge">
                 <i class="ph-fill ph-check-circle"></i>
                 <div>
@@ -72,7 +117,8 @@
     <section id="sobre-mi" class="sobre-mi-section">
         <div class="sobre-mi-container">
             <div class="sobre-mi-image">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Instructor de manejo">
+                <span class="section-subtitle">CONOCÉ A TU INSTRUCTOR</span>
+                <img src="/luis_veliz.jpg" alt="Foto del Instructor Luis Velis">
                 <div class="experience-badge">
                     <strong>+10</strong>
                     <span>años enseñando</span>
@@ -82,7 +128,7 @@
                 <span class="section-subtitle">CONOCÉ A TU INSTRUCTOR</span>
                 <h2>Aprender a manejar no tiene por qué ser estresante</h2>
                 <p>Sé lo que genera sentarse por primera vez al volante: los nervios, la presión del tránsito y el miedo a cometer errores. Por eso, mi trabajo no es solo enseñarte a mover el auto, sino darte la seguridad para salir a la calle.</p>
-                <p>Con más de una década de experiencia acompañando a alumnos en Concordia, adapté un método 100% práctico y paciente, enfocado en tus tiempos y sin presiones.</p>
+                <p>Con experiencia acompañando a alumnos en Concordia, adapté un método 100% práctico y paciente, enfocado en tus tiempos y sin presiones.</p>
                 <div class="sobre-mi-stats">
                     <div class="stat-item">
                         <strong>+10</strong>
@@ -117,8 +163,8 @@
             </div>
             <div class="metodo-card">
                 <i class="ph ph-car-profile"></i>
-                <h3>Tránsito real</h3>
-                <p>Práctica en las calles de Concordia que vas a recorrer, ganando confianza de verdad.</p>
+                <h3>Tránsito real y circuito</h3>
+                <p>Práctica en el circuito de examen real que vas a recorrer, ganando confianza de verdad.</p>
                 <span class="card-number">02</span>
             </div>
             <div class="metodo-card">
@@ -138,76 +184,112 @@
         </div>
     </section>
 
-    <!-- Práctica Teórica -->
-    <section id="practica" class="practica-section">
-        <div class="practica-content">
-            <span class="section-subtitle">ANTES DE SALIR</span>
-            <h2>La teoría también se practica</h2>
-            <p>Entrená tu mirada y llegá al examen con las reglas claras. Probá una pregunta rápida.</p>
-            <div class="time-tip">
-                <i class="ph ph-clock"></i>
-                <span>5 minutos por día hacen la diferencia</span>
-            </div>
-        </div>
-        <div class="practica-quiz">
-            <div class="quiz-header">
-                <span class="quiz-badge">Mini examen</span>
-                <span class="quiz-progress">Pregunta 04 / 10</span>
-            </div>
-            <h3>¿Quién tiene prioridad en una rotonda?</h3>
-            <div class="quiz-options" id="quiz-options">
-                <button class="quiz-option" data-correct="false">
-                    <span class="option-letter">A</span> El vehículo que ingresa
-                </button>
-                <button class="quiz-option" data-correct="true">
-                    <span class="option-letter">B</span> El vehículo que ya circula
-                </button>
-                <button class="quiz-option" data-correct="false">
-                    <span class="option-letter">C</span> El vehículo más grande
-                </button>
-            </div>
-        </div>
-    </section>
-
     <!-- Videoteca -->
     <section id="videos" class="videos-section">
         <div class="videos-header">
             <div>
                 <span class="section-subtitle">APRENDÉ CUANDO QUIERAS</span>
                 <h2>Clases y tips en video</h2>
+                <p class="videos-disclaimer">
+                    <i class="ph ph-info"></i> Material audiovisual ilustrativo. Créditos a sus respectivos autores.
+                </p>
             </div>
-            <a href="#" class="btn-text">Ver toda la videoteca <i class="ph ph-arrow-right"></i></a>
+            <a href="https://www.instagram.com/clasesdemanejoluisvelis_cdia/?hl=es" class="btn-text" target="_blank">Ver más en Instagram <i class="ph ph-arrow-right"></i></a>
+        </div>
+            <a href="https://www.instagram.com/clasesdemanejoluisvelis_cdia/?hl=es" class="btn-text" target="_blank">Ver más en Instagram <i class="ph ph-arrow-right"></i></a>
         </div>
         <div class="videos-grid">
-            <div class="video-card">
-                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1506526615915-02380590a5d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
-                    <button class="play-btn"><i class="ph-fill ph-play"></i></button>
-                    <span class="video-duration">04:32</span>
+
+            <!-- VIDEO 1 -->
+            <div class="video-card" data-video="videos/Salida_Marcha_atras.mp4" data-title="Cómo salir marcha atrás">
+                <div class="video-thumbnail">
+                    <video src="videos/Salida_Marcha_atras.mp4#t=0.2" preload="metadata" muted playsinline></video>
+                    <button class="play-btn" aria-label="Reproducir video"><i class="ph-fill ph-play"></i></button>
+                    <span class="video-duration">Tips</span>
                 </div>
                 <div class="video-info">
-                    <h4>Cómo estacionar en paralelo</h4>
+                    <h4>Cómo salir marcha atrás</h4>
                     <i class="ph ph-arrow-right"></i>
                 </div>
             </div>
-            <div class="video-card">
-                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
-                    <button class="play-btn"><i class="ph-fill ph-play"></i></button>
-                    <span class="video-duration">03:18</span>
+
+            <!-- VIDEO 2 -->
+            <div class="video-card" data-video="videos/Estacionamiento_paralelo.mp4" data-title="Estacionamiento paralelo">
+                <div class="video-thumbnail">
+                    <video src="videos/Estacionamiento_paralelo.mp4#t=0.2" preload="metadata" muted playsinline></video>
+                    <button class="play-btn" aria-label="Reproducir video"><i class="ph-fill ph-play"></i></button>
+                    <span class="video-duration">Tips</span>
                 </div>
                 <div class="video-info">
-                    <h4>Qué hacer en una pendiente</h4>
+                    <h4>Estacionamiento paralelo</h4>
                     <i class="ph ph-arrow-right"></i>
                 </div>
             </div>
-            <div class="video-card">
-                <div class="video-thumbnail" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');">
-                    <button class="play-btn"><i class="ph-fill ph-play"></i></button>
-                    <span class="video-duration">08:45</span>
+
+            <!-- VIDEO 3 -->
+            <div class="video-card" data-video="videos/Prioridad_rotondas_glorietas.mp4" data-title="Prioridad en rotondas y glorietas">
+                <div class="video-thumbnail">
+                    <video src="videos/Prioridad_rotondas_glorietas.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                    <button class="play-btn" aria-label="Reproducir video"><i class="ph-fill ph-play"></i></button>
+                    <span class="video-duration">Tips</span>
                 </div>
                 <div class="video-info">
-                    <h4>Simulacro de examen práctico</h4>
+                    <h4>Prioridad en rotondas y glorietas</h4>
                     <i class="ph ph-arrow-right"></i>
                 </div>
+            </div>
+
+            <!-- VIDEO 4 -->
+            <div class="video-card" data-video="videos/Estacionamiento_MarchaAtras.mp4" data-title="Estacionamiento marcha atrás">
+                <div class="video-thumbnail">
+                    <video src="videos/Estacionamiento_MarchaAtras.mp4#t=0.2" preload="metadata" muted playsinline></video>
+                    <button class="play-btn" aria-label="Reproducir video"><i class="ph-fill ph-play"></i></button>
+                    <span class="video-duration">Tips</span>
+                </div>
+                <div class="video-info">
+                    <h4>Estacionamiento marcha atrás</h4>
+                    <i class="ph ph-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- VIDEO 5 -->
+            <div class="video-card" data-video="videos/Estacionar_45G.mp4" data-title="Estacionamiento a 45° marcha atrás">
+                <div class="video-thumbnail">
+                    <video src="videos/Estacionar_45G.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                    <button class="play-btn" aria-label="Reproducir video"><i class="ph-fill ph-play"></i></button>
+                    <span class="video-duration">Tips</span>
+                </div>
+                <div class="video-info">
+                    <h4>Estacionamiento a 45° marcha atrás</h4>
+                    <i class="ph ph-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- VIDEO 6 -->
+            <div class="video-card" data-video="videos/Fin_camino_Estrecho.mp4" data-title="Reincorporación a la vía en fin de camino estrecho">
+                <div class="video-thumbnail">
+                    <video src="videos/Fin_camino_Estrecho.mp4#t=0.5" preload="metadata" muted playsinline></video>
+                    <button class="play-btn" aria-label="Reproducir video"><i class="ph-fill ph-play"></i></button>
+                    <span class="video-duration">Tips</span>
+                </div>
+                <div class="video-info">
+                    <h4>Reincorporación a la vía en fin de camino estrecho</h4>
+                    <i class="ph ph-arrow-right"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Modal Reproductor de Video -->
+        <div id="video-modal" class="video-modal-overlay">
+            <div class="video-modal-content">
+                <div class="video-modal-header">
+                    <h4 id="video-modal-title">Título del video</h4>
+                    <button id="close-video-modal" class="video-modal-close" aria-label="Cerrar video">
+                        <i class="ph ph-x"></i>
+                    </button>
+                </div>
+                <video id="modal-video-player" controls playsinline></video>
             </div>
         </div>
     </section>
@@ -219,7 +301,7 @@
             <h2>Ellos ya lo lograron</h2>
             <div class="rating-overall">
                 <div class="stars">
-                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i>
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
                 </div>
                 <span>4.9/5 en opiniones</span>
             </div>
@@ -231,7 +313,7 @@
                     <span class="badge-success"><i class="ph ph-check-circle"></i> ¡Carnet obtenido!</span>
                 </div>
                 <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-                <p>"Llegué con muchísimo miedo y salí manejando sola. La paciencia de Agus hizo toda la diferencia."</p>
+                <p>"Llegué con muchísimo miedo y salí manejando sola. La paciencia que me tuvo hizo toda la diferencia."</p>
                 <div class="testimonio-author">
                     <strong>Lucía M.</strong>
                     <span>Alumna de Concordia</span>
@@ -255,7 +337,7 @@
                     <span class="badge-success"><i class="ph ph-check-circle"></i> ¡Carnet obtenido!</span>
                 </div>
                 <div class="stars"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-                <p>"Aprobé en el primer intento. Me dio herramientas y confianza, no solo trucos para el examen."</p>
+                <p>"Aprobé en el primer intento. Me dio herramientas y confianza para andar en la ciudad sin problemas."</p>
                 <div class="testimonio-author">
                     <strong>Sofía R.</strong>
                     <span>Alumna de Concordia</span>
@@ -270,7 +352,7 @@
             <span class="section-subtitle">¿TENÉS DUDAS?</span>
             <h2>Preguntas frecuentes</h2>
             <p>Todo lo que necesitás saber antes de arrancar tus clases en Concordia.</p>
-            <a href="#contacto" class="btn-outline-dark">Quiero consultar</a>
+            <a href="https://wa.me/5493454078397?text=Hola%2C%20Luis%21%20Buen%20d%C3%ADa%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20de%20manejo.%20Gracias%21" class="btn-outline-dark" target="_blank">Quiero consultar</a>
         </div>
         <div class="faq-accordion">
             <div class="faq-item">
@@ -278,7 +360,7 @@
                     ¿Dónde se dictan las clases? <i class="ph ph-caret-down"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Las clases prácticas se realizan por diferentes zonas de Concordia, adaptándonos al nivel. Empezamos en zonas de bajo tránsito y luego avanzamos hacia el centro.</p>
+                    <p>Las clases prácticas se realizan por diferentes zonas de Concordia, adaptándonos a tu nivel. Empezamos en zonas de bajo tránsito y luego avanzamos hacia el centro y zonas de evaluación.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -286,7 +368,7 @@
                     ¿Puedo empezar si nunca manejé? <i class="ph ph-caret-down"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>¡Sí! No necesitás experiencia previa. Empezamos desde lo más básico y avanzamos a tu ritmo, siempre con paciencia y seguridad.</p>
+                    <p>¡Sí! No necesitás experiencia previa. Empezamos desde cero, explicándote los controles del vehículo a tu ritmo, siempre con paciencia.</p>
                 </div>
             </div>
             <div class="faq-item">
@@ -294,15 +376,15 @@
                     ¿Cuánto dura cada clase? <i class="ph ph-caret-down"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Cada clase tiene una duración de 60 minutos, enfocados 100% en la práctica detrás del volante.</p>
+                    <p>Cada clase dura 60 minutos completos, enfocados 100% en práctica detrás del volante.</p>
                 </div>
             </div>
             <div class="faq-item">
                 <button class="faq-question">
-                    ¿Practican el recorrido del examen? <i class="ph ph-caret-down"></i>
+                    ¿Practican el recorrido del examen práctico? <i class="ph ph-caret-down"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Sí, las últimas clases del curso las destinamos a hacer el recorrido exacto que te van a evaluar en la municipalidad.</p>
+                    <p>Sí, practicamos las maniobras exactas (estacionamiento, marcha atrás, control en pendientes) que se evalúan en la ciudad.</p>
                 </div>
             </div>
         </div>
@@ -313,11 +395,11 @@
         <div class="footer-grid">
             <div class="footer-brand">
                 <div class="logo">
-                    <i class="ph-fill ph-steering-wheel"></i> RUTASEGURA
+                    <i class="ph-fill ph-steering-wheel"></i> Instructor de Manejo - Luis Velis
                 </div>
                 <p>Aprendé a manejar con confianza, seguridad y un método que se adapta a vos.</p>
                 <div class="footer-social">
-                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                    <a href="https://www.instagram.com/clasesdemanejoluisvelis_cdia/?hl=es" target="_blank"><i class="ph ph-instagram-logo"></i></a>
                     <a href="#"><i class="ph ph-map-pin"></i></a>
                 </div>
             </div>
@@ -326,34 +408,34 @@
                 <ul>
                     <li><a href="#sobre-mi">Sobre mí</a></li>
                     <li><a href="#metodo">Método</a></li>
-                    <li><a href="#practica">Práctica teórica</a></li>
                     <li><a href="#videos">Videoteca</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#faq">Preguntas frecuentes</a></li>
                 </ul>
             </div>
             <div class="footer-links">
-                <h4>Clases</h4>
+                <h4>Servicios</h4>
                 <ul>
-                    <li><a href="#">Principiantes</a></li>
-                    <li><a href="#">Perfeccionamiento</a></li>
-                    <li><a href="#">Práctica de examen</a></li>
+                    <li><a href="#metodo">Principiantes</a></li>
+                    <li><a href="#metodo">Perfeccionamiento</a></li>
+                    <li><a href="#metodo">Práctica de examen</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h4>Contacto</h4>
-                <p>+54 9 345 555-0123</p>
-                <p>hola@rutasegura.com</p>
+                <p>+54 9 345 407-8397</p>
+                <p>Concordia, Entre Ríos</p>
                 <p>Lun a Sáb - 8 a 20 h</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 RutaSegura. Todos los derechos reservados.</p>
-            <p>Hecho para manejar bien</p>
+            <p>&copy; 2026 - Todos los derechos reservados.</p>
+            <p>Desarrollado en Concordia - RM Alumno UTN.</p>
         </div>
     </footer>
 
-    <!-- WhatsApp Flotante -->
-    <a href="https://wa.me/5493455550123" class="whatsapp-float" target="_blank">
+    <!-- Wsp flotante-->
+    <a href="https://wa.me/5493454078397?text=Hola%2C%20Luis%21%20Buen%20d%C3%ADa%2C%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20clases%20de%20manejo.%20Gracias%21" class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
         <i class="ph-fill ph-whatsapp-logo"></i>
     </a>
 
